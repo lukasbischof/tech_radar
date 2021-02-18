@@ -1,0 +1,6 @@
+create_table("technologies") {
+	t.Column("id", "uuid", {primary: true})
+	t.Column("name", "string", {})
+	t.Column("category", "string", {})
+	t.Timestamps()
+}

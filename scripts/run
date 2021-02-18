@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+webpack --watch &
+gin run main.go

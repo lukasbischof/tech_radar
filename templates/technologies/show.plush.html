@@ -1,0 +1,22 @@
+<div class="py-4 mb-2">
+  <h3 class="d-inline-block">Technology Details</h3>
+
+  <div class="float-right">
+    <%= linkTo(technologiesPath(), {class: "btn btn-info"}) { %>
+      Back to all Technologies
+    <% } %>
+    <%= linkTo(editTechnologyPath({ technology_id: technology.ID }), {class: "btn btn-warning", body: "Edit"}) %>
+    <%=
+      linkTo(
+        technologyPath({ technology_id: technology.ID }),
+        { class: "btn btn-danger", "data-method": "DELETE", "data-confirm": "Are you sure?", body: "Destroy" }
+      )
+    %>
+  </div>
+</div>
+
+<ul class="list-group mb-2">
+  <li>ID: <%= technology.ID %></li>
+  <li>Name: <%= technology.Name %></li>
+  <li>Category: <%= technology.Category %></li>
+</ul>

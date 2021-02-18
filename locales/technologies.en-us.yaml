@@ -1,0 +1,6 @@
+- id: "technology.created.success"
+  translation: "Technology was successfully created."
+- id: "technology.updated.success"
+  translation: "Technology was successfully updated."
+- id: "technology.destroyed.success"
+  translation: "Technology was successfully destroyed."
